@@ -1,0 +1,54 @@
+/* FREEDOM - Cyberpunk Landing Page Styles */
+
+/* Reset and base */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00ffff, #ff00ff);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ff00ff, #00ffff);
+}
+
+/* Selection color */
+::selection {
+    background: rgba(0, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+/* Button transitions */
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Link hover effects */
+a {
+    transition: color 0.3s ease;
+}
